@@ -1,0 +1,41 @@
+dn: dc=example,dc=com
+objectClass: dcObject
+objectClass: organization
+dc: example
+o: example
+
+dn: ou=people,dc=example,dc=com
+objectClass: organizationalUnit
+ou: people
+
+dn: uid=test,ou=people,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: test
+sn: User
+givenName: Test
+cn: Test User
+displayName: Test User
+uidNumber: 2000
+gidNumber: 2000
+gecos: Test User
+userPassword: password
+loginShell: /bin/bash
+homeDirectory: /home/test
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 8
+shadowMax: 999999
+shadowLastChange: 10877
+mail: test@example.com
+
+dn: ou=groups,dc=example,dc=com
+objectClass: organizationalUnit
+ou: groups
+
+dn: cn=test,ou=groups,dc=example,dc=com
+objectClass: posixGroup
+cn: test
+gidNumber: 2000
