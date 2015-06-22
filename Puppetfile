@@ -1,4 +1,4 @@
 forge 'https://forgeapi.puppetlabs.com'
 
-mod 'bodgit/openldap', :git => "https://github.com/bodgit/puppet-openldap.git"
+mod 'bodgit/openldap'
 mod 'puppetlabs/firewall'
